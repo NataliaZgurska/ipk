@@ -1,0 +1,49 @@
+.header {
+  height: 50px;
+  width: 100%;
+  margin-bottom: 20px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #475467;
+}
+
+.navContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navLogoHome {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+
+.navLink {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #475467;
+}
+.navLink:hover {
+  color: blue;
+  text-decoration: underline;
+}
+.active {
+  color: blue;
+  text-decoration: underline;
+}
+
+.headerTel {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+}
