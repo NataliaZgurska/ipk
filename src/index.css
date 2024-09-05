@@ -3,12 +3,23 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color: #101828;
+  /* color: #101828;
   background-color: white;
-  background-image: linear-gradient(to left, #a1ffce, #faffd1);
+  background-image: linear-gradient(to left, #a1ffce, #faffd1); */
+
+  --bg-color-main: #e4edff;
+  --bg-color-second: #adc8fe;
+  --color-main: #011a4d;
+  --color-second: #022a79;
+  --color-link: #0649d1;
+  --color-active: #bf1e06;
+
+  color: var(--color-main);
+  background-color: var(--bg-color-main);
 }
 
-*,
+/* #011A4D #022A79 #0439A5 #0649D1 #0859fC #3F7EFD #76A3FD #ADC8FE #E4EDFF  */
+
 *::before,
 *::after {
   box-sizing: border-box;
@@ -52,22 +63,31 @@ a {
 }
 a:hover {
   font-weight: 600;
-  color: blue;
+  color: var(--color-link);
+}
+
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 26px;
+}
+h3 {
+  font-size: 18px;
 }
 
 body {
   width: 100wh;
   height: 100vh;
-  padding: 30px 64px 100px 64px;
   margin: 0 auto;
 
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   letter-spacing: 0.04em;
 
-  display: flex;
-  min-width: 320px;
-  min-height: 100vh;
+  /* display: flex; */
+  /* min-width: 320px;
+  min-height: 100vh; */
 }
 
 .iconOption {

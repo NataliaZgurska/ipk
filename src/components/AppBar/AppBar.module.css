@@ -1,49 +1,97 @@
 .header {
-  height: 50px;
+  height: 160px;
   width: 100%;
+  background-color: #adc8fe;
+  border-bottom: 1px solid #022a79;
+  padding: 20px;
   margin-bottom: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  /* background-color: yellow; */
+}
+
+.logoTitleAdressContainer {
+  width: 100%;
 
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 
-  border-bottom: 1px solid #475467;
+  /* background-color: aqua; */
 }
 
-.navContainer {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
+.logoTitleContainer {
+  width: 680px;
 
-.navLogoHome {
   display: flex;
   flex-direction: row;
-  gap: 8px;
+  gap: 20px;
+  /* background-color: blue; */
+}
+
+.logoWrap {
+  width: 80px;
+  overflow: hidden;
+}
+
+.titleWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* align-items: center; */
+
+  /* background-color: green; */
+}
+
+/************* Adress **********/
+
+.headerAdres {
+  width: 210px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  /* background-color: burlywood; */
+}
+
+.adresTel,
+.adresEmail,
+.adresAdres {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
   align-items: center;
+}
+
+/***************** Menu Navigation **************/
+.navContainer {
+  width: 100%;
+  /* background-color: aqua; */
+}
+.navList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
 }
 
 .navLink {
   display: inline-block;
   text-decoration: none;
-  padding: 12px;
+  /* padding: 12px; */
   font-size: 20px;
   font-weight: 700;
-  color: #475467;
+  color: #022a79;
 }
 .navLink:hover {
-  color: blue;
+  color: #0649d1;
   text-decoration: underline;
 }
 .active {
-  color: blue;
-  text-decoration: underline;
-}
-
-.headerTel {
-  display: flex;
-  flex-direction: row;
-  gap: 6px;
-  align-items: center;
+  color: #bf1e06;
+  text-decoration: none;
 }
